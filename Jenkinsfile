@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh 'mvn -f jjava-tomcat-sample-docker/blob/master/pom.xml clean package'
+                sh 'mvn -f java-tomcat-sample-docker/blob/master/pom.xml clean package'
             }
             post {
                 success {
